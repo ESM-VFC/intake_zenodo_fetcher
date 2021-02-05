@@ -1,12 +1,12 @@
 from setuptools import setup
 
 setup(
-    name="esmvfc-cattools",
-    version="2020.04.27.1",
-    description="ESM-VFC catalog tools",
-    url="https://github.com/ESM-VFC/esm-vfc-catalogs",
+    name="intake_zenodo_fetcher",
+    version="2021.02.05.1",
+    description="Fetch data from Zenodo based on Intake catalog entries",
+    url="https://github.com/ESM-VFC/intake_zenodo_fetcher",
     author="ESM-VFC developers",
     license="MIT",
-    packages=["esmvfc_cattools"],
+    packages=["intake_zenodo_fetcher"],
     zip_safe=False,
 )

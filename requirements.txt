@@ -1,2 +1,4 @@
 intake
 pycurl
+python
+tqdm

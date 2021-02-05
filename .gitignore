@@ -1,10 +1,10 @@
-.ipynb_checkpoints
-default.profraw
-data_store
-esm_vfc_data_store
 __pycache__
+.ipynb_checkpoints
+*.egg-info
 *.pyc
 build
-*.egg-info
+data_store
+default.profraw
 dist
 esm_vfc_data
+esm_vfc_data_store
