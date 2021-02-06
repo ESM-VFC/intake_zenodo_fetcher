@@ -1,8 +1,10 @@
-# Intake Zenodo Fetcher
+# Intake Zenodo Fetcher: _Fetch data from Zenodo based on Intake catalog entries_
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ESM-VFC/intake_zenodo_fetcher/main?filepath=examples/fetch_based_on_zenodo_doi.ipynb)
 
-Fetch data from Zenodo based on Intake catalog entries
+## Why?
+
+To help with workflows that use data archived on Zenodo, `intake_zenodo_fetcher` simplifies downloading a local copy of the data belonging to a Zenodo DOI.
 
 See [examples/fetch_based_on_zenodo_doi.ipynb](https://nbviewer.jupyter.org/github/ESM-VFC/intake_zenodo_fetcher/blob/main/examples/fetch_based_on_zenodo_doi.ipynb) for a demo on pre-fetching the data based on a Zenodo DOI.
 
