@@ -4,7 +4,8 @@
 
 ## Why?
 
-To help with workflows that use data archived on Zenodo, `intake_zenodo_fetcher` simplifies downloading a local copy of the data belonging to a Zenodo DOI.
+To improve reproducibility of workflows that use data archived on Zenodo, `intake_zenodo_fetcher` simplifies downloading a local copy of the data belonging to a Zenodo DOI.
+It offers functions to fetch _all_ data baloginging to a Zenodo DOI and it allows for restricting the download to just those parts of the Zenodo record that belong to a catalog entry in an Intake catalog.
 
 See [examples/fetch_based_on_zenodo_doi.ipynb](https://nbviewer.jupyter.org/github/ESM-VFC/intake_zenodo_fetcher/blob/main/examples/fetch_based_on_zenodo_doi.ipynb) for a demo on pre-fetching the data based on a Zenodo DOI.
 
