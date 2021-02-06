@@ -15,7 +15,7 @@ python -m pip install git+https://github.com/ESM-VFC/intake_zenodo_fetcher.git
 
 ## Usage
 
-`intake_zenodo_fetcher` populates the storage location indicate in the intake catalog with data from Zenodo, if the catalog entries have a `metadata.zenod_doi` key.
+`intake_zenodo_fetcher` populates the storage location indicate in the intake catalog with data from Zenodo, if the catalog entries have a `metadata.zenodo_doi` key.
 
 For the following example entry `"FESOM2_sample"` pointing to <https://zenodo.org/record/3865567>
 ```yaml
