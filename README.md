@@ -12,3 +12,37 @@ Install with:
 ```python
 python -m pip install git+https://github.com/ESM-VFC/intake_zenodo_fetcher.git
 ```
+
+## Usage
+
+`intake_zenodo_fetcher` populates the storage location indicate in the intake catalog with data from Zenodo, if the catalog entries have a `metadata.zenod_doi` key.
+
+For the following example entry `"FESOM2_sample"` pointing to <https://zenodo.org/record/3865567>
+```yaml
+metadata:
+  version: 1
+
+plugins:
+  source:
+      - module: intake_xarray
+
+sources:
+  FESOM2_sample:
+    driver: netcdf
+    description: 'FESOM2 pi mesh Sample dataset'
+    metadata:
+      zenodo_doi: "10.5281/zenodo.3865567"
+    args:
+      urlpath: "{{ CATALOG_DIR }}/FESOM2_PI_MESH/*.fesom.1948.nc"
+      xarray_kwargs:
+        decode_cf: False
+        combine: 'by_coords'
+
+```
+running
+```python
+intake_zenodo_fetcher.download_zenodo_files_for_entry(
+    cat['FESOM2_sample']
+)
+```
+will make sure all files matching the glob pattern `"*.fesom.1948.nc"` are downloaded to `./FESOM2_PI_MESH/` in the directory that also contains the catalog.
