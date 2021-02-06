@@ -3,61 +3,60 @@ metadata:
 
 plugins:
   source:
-      - module: intake_xarray
+    - module: intake_xarray
 
 sources:
-
   NEMO_GYRE_Test_grid_T:
     driver: netcdf
-    description: 'NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)'
+    description: "NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3634491"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_T.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_T.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_GYRE_Test_grid_U:
     driver: netcdf
-    description: 'NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)'
+    description: "NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3634491"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_U.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_U.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_GYRE_Test_grid_V:
     driver: netcdf
-    description: 'NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)'
+    description: "NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3634491"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_V.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_V.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_GYRE_Test_grid_W:
     driver: netcdf
-    description: 'NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)'
+    description: "NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3634491"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_W.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_GYRE_Test/GYRE_5d_00010101_00011230_grid_W.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_GYRE_Test_mesh_mask:
     driver: netcdf
-    description: 'NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)'
+    description: "NEMO Gyre Test Data (see: https://doi.org/10.5281/zenodo.3634491)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3634491"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_GYRE_Test/mesh_mask.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_GYRE_Test/mesh_mask.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
