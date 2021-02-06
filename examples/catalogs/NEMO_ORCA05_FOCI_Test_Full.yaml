@@ -3,94 +3,93 @@ metadata:
 
 plugins:
   source:
-      - module: intake_xarray
+    - module: intake_xarray
 
 sources:
-
   NEMO_ORCA05_FOCI_Test_grid_T:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_T.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_T.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_grid_U:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_U.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_U.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_grid_V:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_V.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_V.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_grid_W:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_W.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_grid_W.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_icemod:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_icemod.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_icemod.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_ptrc_T:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_ptrc_T.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/FOCI1.14-TEST.2020.04.1_1m_????????_????????_ptrc_T.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_mesh_mask:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/mesh_mask.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/mesh_mask.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
 
   NEMO_ORCA05_FOCI_Test_new_maskglo:
     driver: netcdf
-    description: 'NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)'
+    description: "NEMO ORCA05 FOCI Test Data Files (see: https://doi.org/10.5281/zenodo.3755721)"
     metadata:
       zenodo_doi: "10.5281/zenodo.3755721"
     args:
-      urlpath: "{{env('ESM_VFC_DATA_DIR')}}/NEMO_ORCA05_FOCI_Test_Full/new_maskglo.nc"
+      urlpath: "{{ CATALOG_DIR }}/NEMO_ORCA05_FOCI_Test_Full/new_maskglo.nc"
       xarray_kwargs:
         decode_cf: False
         combine: by_coords
